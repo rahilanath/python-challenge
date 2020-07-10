@@ -70,7 +70,7 @@ with open(bugdet_csv, 'r') as input_csv:
     # pass list of row values to function and set variable for return list
     results = run_analysis(input_rows, input_length)
 
-# open analysis report file with newline parameter to remove carriage
+# open analysis report file, newline parameter to remove carriage
 with open(analysis_file, 'w', newline='') as output_file:
     output_writer = csv.writer(output_file, delimiter=',')
 
@@ -80,3 +80,10 @@ with open(analysis_file, 'w', newline='') as output_file:
         
         # print each line to terminal
         print(result)
+    
+    # removes last line empty line from file to make OCD happy
+    # sample code from stack overflow:
+    # https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer
+    output_file.seek(0, os.SEEK_END)
+    output_file.seek(output_file.tell()-2, os.SEEK_SET)
+    output_file.truncate()

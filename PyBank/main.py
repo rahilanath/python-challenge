@@ -10,29 +10,30 @@ analysis_file = os.path.join("analysis","analysis_report.txt")
 # function that runs analysis
 def run_analysis(input_rows, input_length):
     # initialize variables used in iteration and list for monthly changes
+    changes = []
     greatest_increase = 0
     greatest_decrease = 0
-    changes = []
     net_profit = 0.00
 
     # iterate through list argument ignoring first month
-    for row in range(1, input_length):
+    for row in range(0, input_length):
         
         #sums net profit
         net_profit = net_profit + float(input_rows[row][1])
-        
-        # calculates hmonth over month change per iteration and stores in list
-        changes.append(float(input_rows[row][1]) - float(input_rows[row-1][1]))
 
-    # finds value for greatest increase and decrease and sets variables
+        if row > 0:
+            # calculates hmonth over month change per iteration starting from the 2nd month and stores in list
+            changes.append(float(input_rows[row][1]) - float(input_rows[row-1][1]))
+
+    # finds value for greatest increase and decrease while summing total changes for average
         for row in range(0, len(changes)):
             if float(changes[row]) > greatest_increase:
                 greatest_increase = changes[row]
-                month_increase = input_rows[row][0]
+                month_increase = input_rows[row+1][0]
             
             elif float(changes[row]) < greatest_decrease:
                 greatest_decrease = changes[row]
-                month_decrease = input_rows[row][0]
+                month_decrease = input_rows[row+1][0]
     
     # run remaining calculations
     avg_change = sum(changes)/len(changes)

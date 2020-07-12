@@ -7,7 +7,6 @@ I ended the script with a snippet of code that removes the last empty line from 
 
 The run-time for the script is negligible.
 
-- PyBank Analysis Report
 [Analysis-Report](PyBank/analysis/analysis_report.txt)
 
 ### PyPoll Submission
@@ -23,10 +22,13 @@ I included the same clean-up snippet of code from PyBank which is sourced in the
 
 The average runtime for this script is around 5 seconds due to the dynamically created candidate list.
 
+[Analysis-Report](PyPoll/analysis/analysis_report.txt)
+
 ![Winner](Images/Winner_Mini.png)
 
 ### References:
 Clean-up code to remove last blank line from txt files:
-[stackoverflow](https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer)
+https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer
 
-[khan](https://imgflip.com/memegenerator/100708178/Captain-Kirk-Khan)
+Star Trek Image:
+https://imgflip.com/memegenerator/100708178/Captain-Kirk-Khan

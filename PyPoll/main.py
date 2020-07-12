@@ -69,6 +69,14 @@ with open(analysis_file, 'w', newline='') as output_file:
     print(title)
     print(spacer)
 
+    # write/print total # of votes
+    output_writer.writerow([f'Total Votes: {input_length}'])
+    print(f'Total Votes: {input_length}')
+
+    # write/print spacer
+    output_writer.writerow([spacer])
+    print(spacer)
+
     # dynamically write/print results
     for row in range(0, len(results)):
         output_writer.writerow([f'{results[row][0]}: {(results[row][1]/input_length):.3%} ({results[row][1]})'])
@@ -78,19 +86,19 @@ with open(analysis_file, 'w', newline='') as output_file:
     output_writer.writerow([spacer])
     print(spacer)
 
-    # write/print winner
+    # write/print winner - "KHHHHHHHHHAAAAAAAAAAAAAAAAAAAAAAAAAANNNNNNNNNNNNNNNNNNN!!!!"
     for row in range(0, len(results)):
         if results[row][2] == 'Winner':
-            output_writer.writerow([f'Winner: {results[row][2]}'])
+            output_writer.writerow([f'Winner: {results[row][0]}'])
             print(f'Winner: {results[row][0]}')
         
     # write/print final spacer
     output_writer.writerow([spacer])
     print(spacer)
     
-    # # removes last line empty line from file to make OCD happy
-    # # original code from stack overflow:
-    # # https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer
-    # output_file.seek(0, os.SEEK_END)
-    # output_file.seek(output_file.tell()-2, os.SEEK_SET)
-    # output_file.truncate()
+    # removes last line empty line from file to make OCD happy
+    # original code from stack overflow:
+    # https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer
+    output_file.seek(0, os.SEEK_END)
+    output_file.seek(output_file.tell()-2, os.SEEK_SET)
+    output_file.truncate()

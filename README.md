@@ -9,7 +9,7 @@ I ended the script with a snippet of code that removes the last empty line from 
 The run-time for the script is negligible.
 
 - NOTE:
-![DISCLAIMER](Images/NOTE.JPG)
+![NOTE](Images/NOTE.JPG)
 
 - PyBank Analysis-Report:
 [Analysis-Report](PyBank/analysis/analysis_report.txt)

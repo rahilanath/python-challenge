@@ -29,3 +29,6 @@ The average runtime for this script is around 5 seconds due to the dynamically c
 ### References:
 Clean-up code to remove last blank line from txt files:
 https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer
+
+Winner_Mini.png:
+https://imgflip.com/memegenerator/100708178/Captain-Kirk-Khan

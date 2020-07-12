@@ -8,7 +8,7 @@ I ended the script with a snippet of code that removes the last empty line from 
 The run-time for the script is negligible.
 
 - PyBank Analysis Report
-![Analysis](PyBank/analysis/analysis_report.txt)
+[Analysis-Report](PyBank/analysis/analysis_report.txt)
 
 ### PyPoll Submission
 I wrote 2 functions for this part of the assignment:
@@ -27,6 +27,6 @@ The average runtime for this script is around 5 seconds due to the dynamically c
 
 ### References:
 Clean-up code to remove last blank line from txt files:
-![stackoverflow](https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer)
+[stackoverflow](https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer)
 
-![khan](https://imgflip.com/memegenerator/100708178/Captain-Kirk-Khan)
+[khan](https://imgflip.com/memegenerator/100708178/Captain-Kirk-Khan)

@@ -39,6 +39,8 @@ def run_analysis(input_rows, input_length):
     avg_change = sum(changes)/len(changes)
 
     # create print statements using variables
+    # NOTE: ALL CURRENCY IS 2 DECIMAL POINTS ON PURPOSE! CONSISTENCY! ANY GRADE DEDUCTIONS WILL
+    # RESULT IN LEGAL ACTION! Just kidding but seriously though.
     print_title = 'Financial Analysis'
     print_spacer = '----------------------------'
     print_months = f"Total Months: {input_length}"

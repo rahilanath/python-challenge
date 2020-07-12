@@ -1,5 +1,6 @@
 # python-challenge
 
+
 ### PyBank Submission
 I wrote out a function that takes 2 parameters: a list of rows from the .csv file excluding the header and the length of list. It runs the calculations and returns a list of print statements to the main sub. The sub then iterates through the return list and writes/prints each statement to the terminal and the Analyst_Report.txt file.
 
@@ -7,7 +8,12 @@ I ended the script with a snippet of code that removes the last empty line from 
 
 The run-time for the script is negligible.
 
+- NOTE:
+![DISCLAIMER](Images/NOTE.png)
+
+- PyBank Analysis-Report:
 [Analysis-Report](PyBank/analysis/analysis_report.txt)
+
 
 ### PyPoll Submission
 I wrote 2 functions for this part of the assignment:
@@ -22,13 +28,14 @@ I included the same clean-up snippet of code from PyBank which is sourced in the
 
 The average runtime for this script is around 5 seconds due to the dynamically created candidate list.
 
+- PyPoll Analysis-Report:
 [Analysis-Report](PyPoll/analysis/analysis_report.txt)
 
-![Winner](Images/Winner_Mini.png)
+![Winner](Images/Winner.png)
 
 ### References:
-Clean-up code to remove last blank line from txt files:
+- Clean-up code to remove last blank line from txt files:
 https://stackoverflow.com/questions/53086588/delete-last-and-blank-line-from-file-written-by-csv-writer
 
-Star Trek Image:
+- Star Trek Image:
 https://imgflip.com/memegenerator/100708178/Captain-Kirk-Khan

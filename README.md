@@ -9,6 +9,7 @@ I ended the script with a snippet of code that removes the last empty line from 
 The run-time for the script is negligible.
 
 - NOTE:
+
 ![NOTE](Images/Note.PNG)
 
 - PyBank Analysis-Report:
